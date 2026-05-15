@@ -64,22 +64,8 @@ Enter the number of your host: 2
 You can walk to his office, he is available.
 ```
 
----
-
-## Bugs Fixed From Original Version
-
-| Bug | Fix Applied |
-|-----|-------------|
-| `student_number >= "100"` — string comparison gives wrong results (`"99" > "100"` alphabetically) | Converted input to `int()` before comparison |
-| `for lecturers in Lecturers_list: print(lecturers)` — loop prints names but never captures visitor's choice; `lecturers` ends up as the last item regardless | Replaced with numbered menu and `input()` to capture actual selection |
-| Unused `lecture` variable duplicating `Lecturers_list` | Removed |
-| `input()` calls not assigned to variables — user input for name/course was discarded | Assigned to `full_name`, `course`, `visitor_name` |
-| `random.randint(10, 2000)` — visit ID generated but never displayed | Now printed at the start of each session |
-
----
 
 ## Author
-
 **Innocent Emeka Iheanacho**
 MSc International Business with Data Analytics — Ulster University
 [LinkedIn](https://www.linkedin.com/in/iheanacho-innocent-emeka/) | [GitHub](https://github.com/Iheanacho-Innocent)
